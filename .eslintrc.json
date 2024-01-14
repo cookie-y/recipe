@@ -1,0 +1,25 @@
+{
+    "parser": "vue-eslint-parser",
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "plugin:vue/vue3-essential",
+        "standard-with-typescript",
+        "plugin:prettier/recommended"
+    ],
+    "parserOptions": {
+        "project": ["./tsconfig.json"],
+        "parser": "@typescript-eslint/parser",
+        "ecmaVersion": "latest",
+        "sourceType": "module",
+        "extraFileExtensions": [".vue"]
+    },
+    "plugins": ["vue", "@typescript-eslint"],
+    "globals": {
+      "uni": true
+    },
+    "rules": {
+    }
+}

@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "strict": true,
+    "jsx": "preserve",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "useDefineForClassFields": true,
+    "resolveJsonModule": true,
+    "lib": [ "esnext", "dom" ],
+    "types": [ "@dcloudio/types" ]
+  },
+  "include": ["**/**/*.vue", "**/**/*.ts", ".eslintrc.json","uni.promisify.adaptor.js"],
+  "exclude": ["node_modules", "unpackage",]
+}
