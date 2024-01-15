@@ -1,9 +1,27 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	"pages": [
 		{
-			"path": "pages/index/index",
+			"path": "pages/auth/SignIn",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/plan/Index",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/recipe/Index",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/me/Index",
+			"style": {
+				"navigationStyle": "custom"
 			}
 		}
 	],
@@ -13,5 +31,24 @@
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
 	},
-	"uniIdRouter": {}
+	"uniIdRouter": {},
+	"tabBar": {
+		"color": "#121629",
+		"selectedColor": "#121629",
+		"backgroundColor": "#fffffe",
+		"borderStyle": "white",
+		"fontSize": "14px",
+		"list": [
+			{
+				"pagePath": "pages/plan/Index",
+				"text": "规划",
+				"iconPath": "/static/image/system/plan.png"
+			},
+			{
+				"pagePath": "pages/recipe/Index",
+				"text": "食谱",
+				"iconPath": "/static/image/system/recipe.png"
+			}
+		]
+	}
 }
