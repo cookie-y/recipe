@@ -55,5 +55,18 @@
 				"iconPath": "/static/image/system/icons/recipe.png"
 			}
 		]
-	}
+	},
+	"condition": { 
+	"current": 0, 
+	"list": [
+		{
+			"name": "规划", 
+			"path": "pages/plan/Index"
+		},
+		{
+			"name": "登录",
+			"path": "pages/auth/Index"
+		}
+	]
+}
 }
