@@ -1,4 +1,9 @@
 {
+	"custom": {
+		"^u--(.*)": "@/uni_modules/uview-plus/components/u-$1/u-$1.vue",
+		"^up-(.*)": "@/uni_modules/uview-plus/components/u-$1/u-$1.vue",
+		"^u-([^-].*)": "@/uni_modules/uview-plus/components/u-$1/u-$1.vue"
+	},
 	"pages": [
 		{
 			"path": "pages/auth/SignIn",
@@ -42,12 +47,12 @@
 			{
 				"pagePath": "pages/plan/Index",
 				"text": "规划",
-				"iconPath": "/static/image/system/plan.png"
+				"iconPath": "/static/image/system/icons/plan.png"
 			},
 			{
 				"pagePath": "pages/recipe/Index",
 				"text": "食谱",
-				"iconPath": "/static/image/system/recipe.png"
+				"iconPath": "/static/image/system/icons/recipe.png"
 			}
 		]
 	}
