@@ -17,5 +17,7 @@ export default defineConfig({
     [/^h-(\d+)$/, ([, d]) => ({ height: `${+d * 2}rpx` })],
     [/^rounded-(\d+)$/, ([, d]) => ({ 'border-radius': `${+d * 2}rpx` })],
     [/^fs-(\d+)$/, ([, d]) => ({ 'font-size': `${+d * 2}rpx` })],
+    [/^c-(\w+)$/, ([, w]) => ({ color: `#${w}` })],
+    [/^bg-(\w+)$/, ([, w]) => ({ 'background-color': `#${w}` })],
   ],
 });

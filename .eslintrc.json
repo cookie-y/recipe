@@ -24,6 +24,15 @@
         // 添加组件命名忽略规则
         "vue/multi-word-component-names": ["error",{
             "ignores": ["Index"]//需要忽略的组件名
+        }],
+        "vue/html-self-closing": ["error", {
+            "html": {
+              "void": "never",
+              "normal": "always",
+              "component": "always"
+            },
+            "svg": "always",
+            "math": "always"
         }]
     }
 }
