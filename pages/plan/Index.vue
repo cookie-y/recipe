@@ -8,6 +8,11 @@
           height="120rpx"
           shape="circle"
           :class="$style.avatar"
+          @click="
+            uni.navigateTo({
+              url: '/pages/me/Index',
+            })
+          "
         />
       </view>
       <view class="flex justify-between mt-5">

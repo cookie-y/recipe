@@ -57,7 +57,7 @@
 		]
 	},
 	"condition": { 
-	"current": 0, 
+	"current": 2, 
 	"list": [
 		{
 			"name": "规划", 
@@ -66,6 +66,10 @@
 		{
 			"name": "登录",
 			"path": "pages/auth/Index"
+		},
+		{
+			"name": "个人中心",
+			"path": "pages/me/Index"
 		}
 	]
 }
