@@ -1,7 +1,15 @@
 <template>
   <view>
     <view class="bg-fff">
-      <u-image src="/static/image/system/images/food.png" width="750rpx" height="380rpx" />
+      <view :class="$style.header">
+        <u-image
+          src="/static/image/user/recipes/lemon_tea.png"
+          width="120rpx"
+          height="120rpx"
+          shape="circle"
+          :class="$style.avatar"
+        />
+      </view>
       <view class="flex justify-between mt-5">
         <u-text v-for="(item, index) in week" :key="index" :text="item" align="center" bold />
       </view>
@@ -39,4 +47,18 @@ for (let i = 0; i < 7; i++) {
   datesInWeek.push(date);
 }
 </script>
-<style></style>
+<style lang="scss" module>
+.header {
+  position: relative;
+  width: 750rpx;
+  height: 380rpx;
+  background-image: url('/static/image/system/images/food.png');
+  background-position: center center;
+  background-size: cover;
+}
+.avatar {
+  position: absolute;
+  top: calc(36rpx + var(--status-bar-height));
+  left: 80rpx;
+}
+</style>
