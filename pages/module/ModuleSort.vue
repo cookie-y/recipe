@@ -4,7 +4,7 @@
     <view class="flex-inline ml-20 mt-10">
       <u-button size="small" icon="plus" color="#232946" iconColor="#fff">添加</u-button>
     </view>
-    <view class="mt-10">
+    <view class="mt-15">
       <SortItem v-for="item in sortList" :key="item.id" :title="item.title" />
     </view>
   </view>

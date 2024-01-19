@@ -8,11 +8,7 @@
           height="120rpx"
           shape="circle"
           :class="$style.avatar"
-          @click="
-            uni.navigateTo({
-              url: '/pages/me/Index',
-            })
-          "
+          @click="routeTo('/pages/me/Index')"
         />
       </view>
       <view class="flex justify-between mt-5">
@@ -36,6 +32,7 @@
 import dayjs from 'dayjs';
 import 'dayjs/locale/zh-cn';
 import PlanCard from './components/PlanCard.vue';
+import { routeTo } from '@/utils/common';
 
 const week: string[] = ['周一', '周二', '周三', '周四', '周五', '周六', '周日'];
 

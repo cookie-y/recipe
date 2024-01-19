@@ -14,6 +14,8 @@ export default {
 
 <style lang="scss">
 @import '@/uni_modules/uview-plus/index.scss';
+@import '/static/scss/common.scss';
+
 body {
   background-color: #f5f5f5;
 }

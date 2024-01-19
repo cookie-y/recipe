@@ -2,7 +2,7 @@
   <view>
     <StatusBar />
     <view class="flex justify-between mt-5 mr-20 ml-20">
-      <u-icon name="arrow-leftward" size="24" />
+      <u-icon name="arrow-leftward" size="24" @click="handleBack" />
       <text class="fs-20">{{ title }}</text>
     </view>
   </view>
@@ -13,6 +13,10 @@ interface TProps {
   title?: string;
 }
 defineProps<TProps>();
+
+const handleBack = () => {
+  uni.navigateBack();
+};
 </script>
 
 <style></style>

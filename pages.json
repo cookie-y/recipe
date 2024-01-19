@@ -42,6 +42,12 @@
 			}
 		},
 		{
+			"path": "pages/me/PostComment",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
 			"path": "pages/module/ModuleSort",
 			"style": {
 				"navigationStyle": "custom"

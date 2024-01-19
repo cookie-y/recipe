@@ -3,7 +3,7 @@
     <StatusBar />
     <!-- 操作区 -->
     <view class="flex justify-between mt-5">
-      <u-icon name="arrow-leftward" size="24" />
+      <u-icon name="arrow-leftward" size="24" @click="handleBack" />
       <u-icon name="/static/image/system/icons/config.png" size="24" />
     </view>
 
@@ -20,6 +20,7 @@
         title="装备"
         label="2/4"
         isLink
+        url="/pages/me/Backpack"
         :border="false"
         :iconStyle="{ width: '36px', height: '36px' }"
       />
@@ -27,11 +28,11 @@
 
     <!-- 其他功能 -->
     <u-grid :border="false" col="4" class="mt-40">
-      <u-grid-item>
+      <u-grid-item @click="routeTo('/pages/module/ModuleSort')">
         <u-icon name="/static/image/system/icons/sort.png" size="30" />
         <text>我的分类</text>
       </u-grid-item>
-      <u-grid-item>
+      <u-grid-item @click="routeTo('/pages/me/ContactUs')">
         <u-icon name="/static/image/system/icons/comment.png" size="30" />
         <text class="grid-text">联系我们</text>
       </u-grid-item>
@@ -39,6 +40,8 @@
   </view>
 </template>
 
-<script lang="ts"></script>
+<script lang="ts" setup>
+import { routeTo, handleBack } from '@/utils/common';
+</script>
 
 <style></style>
