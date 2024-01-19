@@ -4,7 +4,9 @@
     <view class="flex justify-between items-center m-20">
       <view class="flex">
         <u-button size="small" icon="list" color="#232946" iconColor="#fff" class="mr-5">全部</u-button>
-        <u-button size="small" icon="plus" color="#232946" iconColor="#fff">添加</u-button>
+        <u-button size="small" icon="plus" color="#232946" iconColor="#fff" @click="routeTo('/pages/recipe/EditRecipe')"
+          >添加</u-button
+        >
       </view>
       <text class="fs-20 font-bold">我的食谱</text>
     </view>
@@ -16,6 +18,7 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue';
+import { routeTo } from '@/utils/common';
 import RecipeCard from './components/RecipeCard.vue';
 
 const data = ref([

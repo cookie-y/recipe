@@ -9,14 +9,13 @@
 </template>
 
 <script setup lang="ts">
+import { handleBack } from '@/utils/common';
+
 interface TProps {
   title?: string;
 }
 defineProps<TProps>();
 
-const handleBack = () => {
-  uni.navigateBack();
-};
 </script>
 
 <style></style>

@@ -24,6 +24,12 @@
 			}
 		},
 		{
+			"path": "pages/recipe/EditRecipe",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
 			"path": "pages/me/Index",
 			"style": {
 				"navigationStyle": "custom"

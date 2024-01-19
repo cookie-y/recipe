@@ -1,7 +1,5 @@
 export const routeTo = (url: string) => {
-  uni.navigateTo({
-    url,
-  });
+  uni.navigateTo({ url });
 };
 
 export const handleBack = () => {
