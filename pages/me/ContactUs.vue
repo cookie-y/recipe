@@ -13,13 +13,16 @@
       />
     </view>
 
-    <u-button color="#232946" :class="$style['leave-comment']">我要留言</u-button>
+    <u-button color="#232946" :class="$style['leave-comment']" @click="routeTo('/pages/me/PostComment')"
+      >我要留言</u-button
+    >
   </view>
 </template>
 
 <script lang="ts" setup>
 import { ref } from 'vue';
 import CommentCard from './components/CommentCard.vue';
+import { routeTo } from '@/utils/common';
 
 const commentList = ref([
   {

@@ -15,7 +15,6 @@ interface TProps {
   title?: string;
 }
 defineProps<TProps>();
-
 </script>
 
 <style></style>
